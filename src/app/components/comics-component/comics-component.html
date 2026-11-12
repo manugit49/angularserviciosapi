@@ -1,0 +1,10 @@
+<h4 style="color: red;">Un precioso comic</h4>
+<p>{{comic.titulo}}</p>
+<p><img src="{{comic.imagen}}" style="width: 100px; height: 130px;"/></p>
+<p>{{comic.descripcion}}</p>
+
+@for (comic of arraycomics; track comic) {
+    <p>{{comic.titulo}}</p>
+    <p><img src="{{comic.imagen}}" style="width: 100px; height: 130px;"/></p>
+    <p>{{comic.descripcion}}</p>
+}
