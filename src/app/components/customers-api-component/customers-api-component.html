@@ -1,0 +1,12 @@
+<h2>Api Clientes</h2>
+
+@for(cliente of customers; track cliente) {
+    <ul>
+    <li>ID: {{cliente.CustomerID}}</li>
+    <li>Nombre: {{cliente.CompanyName}}</li>
+    <li>Contacto: {{cliente.ContactName}}</li>
+    <li>Pais: {{cliente.Country}}</li>
+    <li>Teléfono: {{cliente.Phone}}</li>
+    </ul>
+    <hr>
+}

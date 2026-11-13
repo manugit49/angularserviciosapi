@@ -12,6 +12,10 @@ import { provideHttpClient } from '@angular/common/http';
 import { PersonasApiComponent } from './components/personas-api-component/personas-api-component';
 import { ServicePersonas } from './services/service.personas';
 import { FormsModule } from '@angular/forms';
+import { HospitalesComponent } from './components/hospitales-component/hospitales-component';
+import { ServiceHospitales } from './services/service.hospitales';
+import { ServiceCustomers } from './services/service.customers';
+import { CustomersApiComponent } from './components/customers-api-component/customers-api-component';
 
 @NgModule({
   declarations: [
@@ -21,12 +25,16 @@ import { FormsModule } from '@angular/forms';
     ComicsComponent,
     ClientesComponent,
     PersonasApiComponent,
+    HospitalesComponent,
+    CustomersApiComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [
     ServiceComics,
     ServiceClientes,
     ServicePersonas,
+    ServiceHospitales,
+    ServiceCustomers,
     provideHttpClient(),
     provideBrowserGlobalErrorListeners(),
   ],
