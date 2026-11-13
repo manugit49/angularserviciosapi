@@ -1,0 +1,18 @@
+<h3>Api de coches</h3>
+<table border="1" class="table table-bordered">
+@for(coche of arraycoches; track coche){
+    <tr>
+        <td>Id: {{coche.idCoche}}</td>
+        <td>Marca: {{coche.marca}}</td>
+        <td>Modelo: {{coche.modelo}}</td>
+        <td>Conductor: {{coche.conductor}}</td>
+    </tr>
+    <tr>
+        <td colspan="4"><img src="{{coche.imagen}}" class="w-100 d-block"
+            style="height: auto; object-fit: cover; display: block; width: max-content"/></td>
+    </tr>
+    <tr class="table-secondary" style="height: 20px;">
+      <td colspan="4"></td>
+    </tr>
+}
+</table>
