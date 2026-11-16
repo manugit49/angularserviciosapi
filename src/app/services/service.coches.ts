@@ -20,4 +20,15 @@ export class ServiceCoches {
             this._http.get<Coche[]>(url)
         )
     }
+
+    async findCocheAsync(idCoche: number): Promise<Coche> {
+        //La request o eEndpoint a utilizar para llegar a los datos
+        let request = "api/coches/findcoche/" + idCoche;
+        //La url para conformar la peticion de los datos al servicio
+        let url = environment.apicoches + request;
+        //Realizamos la petición
+        return firstValueFrom(
+            this._http.get<Coche>(url)
+        )
+    }
 }

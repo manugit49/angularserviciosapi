@@ -1,0 +1,9 @@
+<h1 style="color: red;">
+    {{mensaje}}
+</h1>
+
+@if(car){
+    <p>Marca: {{car.marca}} {{car.modelo}}</p>
+        <p>Conductor: {{car.conductor}}</p>
+        <img src="{{car.imagen}}" alt="{{car.marca}} {{car.modelo}}"/>
+}
