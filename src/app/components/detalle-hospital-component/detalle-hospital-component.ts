@@ -23,6 +23,7 @@ export class DetalleHospitalComponent {
     this._active.params.subscribe(async (params: Params) => {
       let idhospital = params['idhospital'];
       this.mensaje = "Soy el hospital " + idhospital;
+      //Buscar el hospital y devolvermelo
       this.hospital = await this._service.findHospital(idhospital);
       this._cdr.detectChanges();
     })

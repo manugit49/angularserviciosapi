@@ -3,7 +3,7 @@
     @for(hospital of arrayhospitales; track hospital){
         <li>
             <a [routerLink]="['/detalleshospital', hospital.idHospital]">
-                Hospital {{hospital.idHospital}}
+                {{hospital.nombre}}
             </a>
         </li>
     }
